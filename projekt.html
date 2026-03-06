@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="da" style="color-scheme: dark;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#222932" />
+  <title>Projekt — Mohamed Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="assets/css/projekt.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Spring til indhold</a>
+
+  <nav class="nav" aria-label="Primær navigation">
+    <a href="index.html" class="nav-logo">Mohamed.</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="mailto:hi@example.com">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main"></main>
+
+  <nav id="js-case-nav" aria-label="Andre projekter"></nav>
+
+  <footer>
+    <p class="footer-copy">&copy; 2025 Mohamed &mdash; Alle rettigheder forbeholdes</p>
+    <ul class="footer-links" role="list">
+      <li><a href="https://github.com/" aria-label="Mohamed på GitHub">GitHub</a></li>
+      <li><a href="https://linkedin.com/" aria-label="Mohamed på LinkedIn">LinkedIn</a></li>
+      <li><a href="mailto:hi@example.com">Email</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script>
+    // Nav scroll behaviour
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    const slug = new URLSearchParams(window.location.search).get('slug');
+    const project = PROJECTS.find(p => p.slug === slug);
+    const main = document.getElementById('main');
+    const caseNav = document.getElementById('js-case-nav');
+
+    if (!project) {
+      document.title = 'Projekt ikke fundet — Mohamed Portfolio';
+      main.innerHTML = `
+        <div class="not-found">
+          <h1>Projekt ikke fundet</h1>
+          <p>Det projekt du leder efter eksisterer ikke eller er blevet fjernet.</p>
+          <a href="index.html">&larr; Tilbage til forsiden</a>
+        </div>`;
+      caseNav.hidden = true;
+    } else {
+      document.title = `${project.title} — Mohamed Portfolio`;
+
+      const resultCardsHtml = project.results.cards.map((card, i) => `
+        <div class="result-card reveal reveal-d${i + 1}">
+          <p class="result-number">${card.number}</p>
+          <p class="result-label">${card.label}</p>
+          <p class="result-desc">${card.desc}</p>
+        </div>`).join('');
+
+      const challengeParagraphsHtml = project.challenge.paragraphs
+        .map(p => `<p>${p}</p>`).join('');
+
+      const solutionParagraphsHtml = project.solution.paragraphs
+        .map(p => `<p>${p}</p>`).join('');
+
+
+      const designDecisionsHtml = project.designDecisions
+        ? `<section class="design-section" aria-labelledby="design-heading">
+            <div class="design-inner">
+              <div class="design-label reveal reveal-d1">
+                <p class="section-tag">Designvalg</p>
+                <h2 id="design-heading">${project.designDecisions.heading}</h2>
+                <div class="design-hover-image" id="design-hover-image" aria-hidden="true">
+                  <img id="design-img" src="" alt="" />
+                </div>
+              </div>
+              <div class="design-paragraphs reveal reveal-d2">
+                ${project.designDecisions.paragraphs.map((p, i) => `<p data-image="${p.image || ''}">${p.text}</p>`).join('')}
+              </div>
+            </div>
+          </section>`
+        : '';
+
+      main.innerHTML = `
+        <!-- HERO -->
+        <header class="case-hero">
+          <p class="case-eyebrow reveal reveal-d1">${project.eyebrow}</p>
+          <h1 class="case-title reveal reveal-d2">${project.titleHtml}</h1>
+          <p class="case-subtitle reveal reveal-d3">${project.subtitle}</p>
+        </header>
+
+        <!-- COVER -->
+        <div class="case-cover reveal">
+          <img
+            src="${project.cover.src}"
+            alt="${project.cover.alt}"
+            width="1400" height="613"
+            fetchpriority="high"
+          />
+        </div>
+
+        <!-- METADATA -->
+        <div class="case-meta" aria-label="Projektdetaljer">
+          <dl class="case-meta-inner">
+            <div class="meta-item reveal reveal-d1">
+              <dt class="meta-label">Klient / Type</dt>
+              <dd class="meta-value">${project.meta.client}</dd>
+            </div>
+            <div class="meta-item reveal reveal-d2">
+              <dt class="meta-label">Periode</dt>
+              <dd class="meta-value">${project.meta.period}</dd>
+            </div>
+            <div class="meta-item reveal reveal-d3">
+              <dt class="meta-label">Min rolle</dt>
+              <dd class="meta-value">${project.meta.role}</dd>
+            </div>
+            <div class="meta-item reveal reveal-d4">
+              <dt class="meta-label">Discipliner</dt>
+              <dd class="meta-value accent">${project.meta.disciplines}</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- SUMMARY -->
+        <section class="summary-section" aria-labelledby="summary-heading">
+          <div class="summary-inner">
+            <div class="reveal reveal-d1">
+              <p class="section-tag">Om projektet</p>
+              <h2 id="summary-heading">Overblik</h2>
+            </div>
+            <div class="reveal reveal-d2">
+              <p class="lead">${project.summary.lead}</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CHALLENGE + SOLUTION -->
+        <div class="split-section">
+          <section aria-labelledby="challenge-heading" class="reveal reveal-d1">
+            <p class="section-tag">Udfordringen</p>
+            <h2 id="challenge-heading">${project.challenge.heading}</h2>
+            ${challengeParagraphsHtml}
+          </section>
+          <section aria-labelledby="solution-heading" class="reveal reveal-d2">
+            <p class="section-tag">L&oslash;sningen</p>
+            <h2 id="solution-heading">${project.solution.heading}</h2>
+            ${solutionParagraphsHtml}
+          </section>
+        </div>
+
+        <!-- INLINE IMAGE -->
+        <div class="container">
+          <figure class="case-image reveal">
+            <img
+              src="${project.inlineImage.src}"
+              alt="${project.inlineImage.alt}"
+              width="1200" height="675"
+              loading="lazy"
+            />
+            <figcaption>${project.inlineImage.caption}</figcaption>
+          </figure>
+        </div>
+
+        <!-- DESIGN DECISIONS -->
+        ${designDecisionsHtml}
+
+        <!-- RESULTS -->
+        <section class="results-section" aria-labelledby="results-heading">
+          <div class="summary-inner" style="margin-bottom: 0;">
+            <div class="reveal reveal-d1">
+              <p class="section-tag">Resultater</p>
+              <h2 id="results-heading">Hvad opn&aring;ede vi?</h2>
+            </div>
+            <div class="reveal reveal-d2">
+              <p style="font-size: var(--text-md); color: var(--text-muted); max-width: 58ch;">
+                ${project.results.intro}
+              </p>
+            </div>
+          </div>
+          <div class="results-grid">${resultCardsHtml}</div>
+        </section>`;
+
+      // CASE NAV
+      const prevHtml = project.nav.prev
+        ? `<a href="projekt.html?slug=${project.nav.prev.slug}" class="case-nav-link" aria-label="Forrige projekt: ${project.nav.prev.title}">
+             <span class="case-nav-dir">&larr; Forrige projekt</span>
+             <span class="case-nav-title">${project.nav.prev.title}</span>
+           </a>`
+        : `<a href="index.html" class="case-nav-link" aria-label="Tilbage til alle projekter">
+             <span class="case-nav-dir">&larr; Alle projekter</span>
+             <span class="case-nav-title">Oversigt</span>
+           </a>`;
+
+      const nextHtml = project.nav.next
+        ? `<a href="projekt.html?slug=${project.nav.next.slug}" class="case-nav-link next" aria-label="Næste projekt: ${project.nav.next.title}">
+             <span class="case-nav-dir">N&aelig;ste projekt &rarr;</span>
+             <span class="case-nav-title">${project.nav.next.title}</span>
+           </a>`
+        : '';
+
+      caseNav.innerHTML = prevHtml + nextHtml;
+
+      // Design decisions hover image
+      const designParagraphs = document.querySelectorAll('.design-paragraphs p[data-image]');
+      const designImgContainer = document.getElementById('design-hover-image');
+      const designImg = document.getElementById('design-img');
+
+      if (designImg && designParagraphs.length) {
+        designParagraphs.forEach(p => {
+          p.addEventListener('mouseenter', () => {
+            const src = p.dataset.image;
+            if (src) {
+              designImg.src = src;
+              designImgContainer.classList.add('is-visible');
+            }
+          });
+          p.addEventListener('mouseleave', () => {
+            designImgContainer.classList.remove('is-visible');
+          });
+        });
+      }
+
+      // Reveal animations
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.08 }
+      );
+      reveals.forEach(el => observer.observe(el));
+    }
+  </script>
+
+</body>
+</html>

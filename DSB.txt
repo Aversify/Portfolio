@@ -1,0 +1,12 @@
+DSB — Redesign af rejseappen
+DSB's app bruges dagligt af tusindvis af rejsende til at finde og booke rejser, tjekke afgange og administrere deres billetter. Som junior designer var jeg del af det interne designteam der stod for et større redesign af appen, med særligt fokus på at gøre rejseoplevelsen mere overskuelig og tilgængeligt en ny check ind/ud-funktion.
+Udfordringen
+Den eksisterende app havde vokset sig kompleks over tid, og brugere oplevede at centrale funktioner var svære at finde eller forstå. Samtidig skulle en ny check ind/ud-feature integreres på en måde der føltes naturlig og hurtig at bruge — særligt i en situation hvor brugeren er på farten og har få sekunder til rådighed.
+Løsningen
+Redesignet tog udgangspunkt i brugerresearch og -test der afdækkede hvor i appen folk stødte på friktion. På baggrund af indsigterne arbejdede vi med en gennemgående forenkling af navigationen og informationsarkitekturen, så de mest brugte funktioner — rejsesøgning, afgangsoversigt og rejsehistorik — var lettere at tilgå.
+Check ind/ud-funktionen blev designet til at være så hurtig og gnidningsfri som muligt. For en bruger der netop er ved at stige på toget er hvert ekstra trin en potentiel barriere, så flowet blev stripped ned til det absolut nødvendige uden at gå på kompromis med tydelighed.
+Den visuelle stil blev opdateret for at skabe mere klarhed og konsistens på tværs af appens mange skærme — med en stærkere hierarkisk struktur der gør det lettere at orientere sig hurtigt.
+Designbeslutninger
+Et gennemgående princip i redesignet var at prioritere brugerens mentale tilstand i kontekst. En person der tjekker afgange på perronen har et helt andet behov end en der sidder hjemme og planlægger en tur — og designet skulle håndtere begge scenarier elegant.
+Brugertest spillede en central rolle i at validere beslutninger undervejs, særligt omkring check ind/ud-flowet og den nye navigationstruktur. Det gav os konkrete data at arbejde ud fra frem for at basere valg på antagelser.
+Som junior designer på et etableret internt team var projektet en lærerig erfaring i at arbejde inden for et eksisterende designsystem og brand, bidrage konstruktivt i et team af erfarne designere og forstå hvordan store produktbeslutninger tages i en organisation som DSB.

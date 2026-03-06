@@ -1,0 +1,17 @@
+DentaAid — Forebyggelsesforløb
+DentaAids forebyggelsesforløb er et selvstændigt digitalt produkt målrettet mennesker med særlig risiko for dårlig mundsundhed — herunder gravide, diabetikere og kræftpatienter. Som solo designer stod jeg for det komplette design af webappen, fra informationsarkitektur og brugerflows til det færdige visuelle design.
+
+Udfordringen
+Mennesker i risikogrupper har ofte forhøjet behov for opfølgning på deres mundsundhed, men mangler redskaberne til at monitorere den løbende eller vide hvornår de skal søge hjælp. Udfordringen var at designe en oplevelse der gør det let og overskueligt at holde styr på sin mundsundhed over tid — uden at det føles som en medicinsk byrde i hverdagen.
+
+Løsningen
+Forløbet er bygget op omkring to faste rytmer der tilsammen giver tandlægen et solidt datagrundlag at arbejde ud fra. Ugentligt besvarer brugeren en række spørgsmål om blødning i tandkødet — hvor kraftigt, hvor ofte og præcis hvor i mundhulen. Månedligt uploader brugeren 5-6 billeder af tandkødet, som tandlægen bruger til at vurdere tilstanden visuelt over tid.
+På baggrund af denne data udarbejder tandlægen en professionel rapport med vurdering af potentielle problemer. Rapporten er tilgængelig direkte i appen, og brugeren får besked når den er klar. Målet er at komme problemerne i forkøbet — ikke at reagere når skaden allerede er sket.
+Når brugeren tilmelder sig forløbet modtager de en fysisk pakke med udstyr særligt udtænkt til deres gruppe. I appen kan de se hvad pakken indeholder med billeder af hvert produkt samt vejledning til korrekt brug — så forbindelsen mellem det fysiske kit og den digitale oplevelse føles sammenhængende.
+Som en del af forløbet har brugeren et antal inkluderede konsultationer med en tandlæge, som nemt kan bookes direkte i appen.
+
+Designbeslutninger
+En af de vigtigste designudfordringer var at gøre de løbende check-ins lette nok til at brugeren faktisk gennemfører dem — uge efter uge. Det betød at spørgsmålsflowet skulle føles kort og konkret, og at den visuelle stil skulle signalere omsorg og tryghed frem for klinisk kontrol. Brugerne er i en sårbar situation, og designet skulle afspejle det.
+Foto-upload flowet krævede særlig opmærksomhed, da det potentielt er en barriere for mange brugere. Her var det vigtigt at give tydelig vejledning om hvordan billederne tages korrekt, så tandlægen får et brugbart grundlag — uden at det føles kompliceret eller teknisk for brugeren.
+Rapporten fra tandlægen er designet til at være tilgængelig og forståelig for en lægmand. Frem for at præsentere rå data eller medicinsk terminologi, er fokus på hvad brugeren skal vide og hvad de eventuelt skal gøre — formidlet på en måde der ikke skaber unødig bekymring.
+Kit-oversigten i appen er med til at skabe sammenhæng mellem det fysiske og det digitale produkt. Det var et bevidst valg at give hvert produkt i pakken sin egen plads med billeder og vejledning, så brugeren fra dag ét føler sig klædt på til forløbet.

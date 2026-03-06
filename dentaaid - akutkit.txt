@@ -1,0 +1,18 @@
+DentaAid — Akutkit vejledningsapp
+
+DentaAid er en dansk teledentistry-platform der giver brugere adgang til tandlægehjælp når de har brug for det. Som solo designer stod jeg for det komplette design af deres webapp til vejledning i brugen af DentaAids akutkit — fra brugerflow og informationsarkitektur til det færdige visuelle design.
+
+Udfordringen
+Brugere der oplever akutte tandsmerter er ofte stressede og usikre på hvad de skal gøre. Akutkittet indeholder flere forskellige værktøjer, og udfordringen var at designe en oplevelse der hurtigt og trygt kunne guide brugeren til den rigtige løsning — uden at overvælde dem med information.
+
+Løsningen
+Jeg designede et triage-baseret flow hvor brugeren besvarer en række spørgsmål for at blive ført direkte hen til den relevante løsningsside med video- og tekstvejledning. Spørgsmålene er struktureret så de gradvist indsnævrer problemet og aldrig føles som et medicinsk skema — målet var at det skulle føles som at blive guidet, ikke udspurgt.
+På løsningssiden præsenteres brugeren for en kombination af video og tekst, så de selv kan vælge den læringsform der passer dem bedst i situationen. Nogle vil have det overblik som teksten giver, andre har brug for at se det gjort i praksis.
+For at sikre at brugeren ikke efterlades alene med resultatet, er der bygget en opfølgningsfunktion ind — 30 minutter efter endt vejledning får brugeren mulighed for at tjekke ind og vurdere om problemet er løst, eller om der er behov for yderligere hjælp. Det var et bevidst valg at placere dette tidspunkt netop her, da det giver behandlingen tid til at virke uden at brugeren føler sig glemt.
+For brugere der blot er nysgerrige på kittet, er der en fri udforskningstilstand hvor man kan læse om de enkelte værktøjer uden at skulle igennem en diagnose først. Derudover er der direkte adgang til at booke en konsultation med en certificeret tandlæge — enten som alternativ til selvbehandling eller som næste skridt hvis vejledningen ikke er nok.
+
+Designbeslutninger
+Et centralt valg var at adskille de to primære brugsscenarier tydeligt: den akutte bruger der har brug for hurtig og tryg vejledning, og den nysgerrige bruger der vil lære om kittet i ro og mag. Begge veje skulle føles naturlige og ligeværdige — ingen af dem måtte opleves som en omvej eller en sekundær funktion.
+I det akutte flow var det vigtigt at minimere den kognitive belastning. Det betød korte, klare spørgsmål, én beslutning ad gangen, og en visuel stil der signalerer ro og kontrol frem for hastværk. Farver og typografi er bevidst holdt nedtonede i flowet for ikke at tilføje unødig uro til en i forvejen stresset situation.
+Bookingfunktionen til direkte tandlægekonsultation er tilgængelig gennem hele oplevelsen, men er designet til ikke at dominere. Den er der som en sikkerhedsventil — synlig nok til at brugeren altid ved den eksisterer, men ikke så fremtrædende at den underminerer tilliden til selvvejledningen.
+Opfølgningsfunktionen efter 30 minutter var et valg der udsprang af et ønske om at forlænge designets ansvar ud over selve opgaveløsningen. I stedet for at betragte brugerrejsen som afsluttet når vejledningen er fulgt, holder appen kontakten og sikrer at brugeren har et naturligt næste skridt — uanset om behandlingen virkede eller ej.
