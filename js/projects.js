@@ -215,7 +215,7 @@ const PROJECTS = [
     slug: 'dentaaid-hjemmeside',
     title: 'DentaAid Hjemmeside',
     liveUrl: 'https://dentaaid.dk',
-    eyebrow: 'Website Design · 2025',
+    eyebrow: 'Website Design · 2022',
     titleHtml: 'DentaAid —<br><em>hjemmeside med</em><br>klar retning',
     subtitle: 'Design og udvikling af DentaAids hjemmeside med fokus på tillid, tydelig struktur og bedre konvertering.',
     cover: {
@@ -272,7 +272,7 @@ summary: {
     slug: 'agilio',
     title: 'Agilio',
     liveUrl: 'https://agilio.one',
-    eyebrow: 'Website Design · Freelance',
+    eyebrow: 'Website Design',
     titleHtml: 'Agilio —<em> europæisk </em>projektstyring',
     subtitle: 'Hjemmeside til et europæisk alternativ til Jira, Linear og Asana — designet til softwareteams med fokus på datasikkerhed.',
     cover: {
@@ -281,7 +281,7 @@ summary: {
     },
     meta: {
       client: 'Agilio',
-      period: 'Freelance',
+      period: '2 uger',
       role: 'Product Designer',
       disciplines: 'Web Design · UX · UI',
     },
