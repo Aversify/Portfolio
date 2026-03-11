@@ -29,7 +29,7 @@
 
   <main id="main"></main>
 
-  <nav id="js-case-nav" aria-label="Andre projekter"></nav>
+  <nav id="js-case-nav" class="case-nav" aria-label="Andre projekter"></nav>
   <div class="scroll-progress">
     <div class="scroll-progress-track" aria-hidden="true">
       <div class="scroll-progress-fill" id="js-scroll-progress-fill"></div>
@@ -210,7 +210,10 @@
                 ${project.liveUrl ? `
                   <div class="case-live">
                     <a class="case-live-link" href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">
-                      Se live side <span aria-hidden="true">↗</span>
+                      Se live side
+                      <svg class="case-live-icon" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                        <path d="M7 17 17 7M9 7h8v8" />
+                      </svg>
                     </a>
                     ${project.liveNote ? `<span class="case-live-note">${project.liveNote}</span>` : ''}
                   </div>
