@@ -73,7 +73,7 @@ const PROJECTS = [
     slug: 'dentaaid-akutkit',
     title: 'DentaAid-webapp',
     liveUrl: 'https://app.dentaaid.dk',
-    eyebrow: 'UX Design · 2025',
+    eyebrow: 'UX Design · 2022',
     titleHtml: 'DentaAid — <em>vejledning der </em>beroliger',
     subtitle: 'En dansk teledentistry-platform der giver brugere adgang til tandægehjælp når de har brug for det — designet til den akutte, stressede bruger.',
     cover: {
@@ -145,7 +145,7 @@ const PROJECTS = [
     title: 'DentaAid Forebyggelse',
     liveUrl: 'https://app.dentaaid.dk/wellness/dashboard',
     liveNote: 'Kræver login',
-    eyebrow: 'UX Design · 2025',
+    eyebrow: 'UX Design · 2022',
     titleHtml: 'DentaAid —<br><em>forebyggelse der</em><br>føles overkommeligt',
     subtitle: 'Et selvstændigt digitalt forebyggelsesløb målrettet mennesker med særlig risiko for dårlig mundsundhed — gravide, diabetikere og kræftpatienter.',
     cover: {
@@ -154,7 +154,7 @@ const PROJECTS = [
     },
     meta: {
       client: 'DentaAid',
-      period: '3M',
+      period: '3 måneder ',
       role: 'Product designer',
       disciplines: 'UX · Informationsarkitektur · Figma',
     },
