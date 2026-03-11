@@ -286,9 +286,19 @@ p { line-height: 1.6; }
   width: 0.56rem;
   height: 0.56rem;
   border-radius: 999px;
-  background: #34c759;
-  box-shadow: 0 0 0 1px rgba(12, 40, 20, 0.55), 0 0 0.75rem rgba(52, 199, 89, 0.48);
+  background: radial-gradient(circle at 35% 35%, #6df08f 0%, #34c759 58%, #29aa4b 100%);
+  box-shadow: 0 0 0 1px rgba(12, 40, 20, 0.42), 0 0 1.05rem rgba(52, 199, 89, 0.58);
   flex-shrink: 0;
+}
+
+.hero-status-dot::before {
+  content: '';
+  position: absolute;
+  inset: -0.28rem;
+  border-radius: 999px;
+  background: rgba(52, 199, 89, 0.45);
+  filter: blur(4px);
+  opacity: 0.85;
 }
 
 .hero-status-dot::after {
@@ -358,6 +368,7 @@ p { line-height: 1.6; }
   color: rgba(249, 248, 245, 0.78);
   position: relative;
   z-index: 1;
+  font-size: 12px;
 }
 .scroll-hint::after {
   content: '';
