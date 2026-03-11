@@ -9,8 +9,8 @@
   <!-- Font preconnect & preload -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:wght@400;500;600&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:wght@400;500;600&display=swap" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Geist:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Geist:wght@400;500;600&display=swap" />
   <link rel="stylesheet" href="assets/css/index.css" />
 </head>
 <body>
@@ -24,7 +24,7 @@
     <ul class="nav-links" role="list">
       <li><a href="#work">Work</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="mailto:hi@example.com">Contact</a></li>
+      <li><a href="kontakt.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -34,8 +34,13 @@
          HERO
     ================== -->
     <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/images/colorflow-animation.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-inner container">
-
         <p class="hero-eyebrow reveal reveal-d1">
           Tilgængelig for nye projekter
         </p>
@@ -54,16 +59,36 @@
           <a href="#work" class="btn btn-primary">Se arbejde</a>
           <a href="mailto:hi@example.com" class="btn btn-ghost">Tag kontakt</a>
         </div>
-
       </div>
-
-      <!-- Decorative -->
-      <span class="hero-deco" aria-hidden="true">Mohamed Ali</span>
 
       <div class="scroll-hint" aria-hidden="true">
         <span>Scroll</span>
       </div>
     </section>
+
+    <!-- ==================
+         SCROLL VIDEO
+    ================== -->
+    <!-- <section class="scroll-video" aria-labelledby="scroll-video-heading">
+      <div class="scroll-video-sticky container">
+        <div>
+          <video
+            id="js-scroll-video"
+            class="scroll-video-media"
+            playsinline
+            muted
+            preload="auto"
+            aria-label="Scroll-styret video demo"
+          >
+            <source src="assets/images/Scene.01_1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="scroll-video-copy">
+          <p class="section-label">Scroll Demo</p>
+          <h2 id="scroll-video-heading">Scroll for at afspille videoen</h2>
+        </div>
+      </div>
+    </section> -->
 
     <!-- ==================
          WORK
@@ -72,58 +97,41 @@
       <div class="work-header">
         <div>
           <p class="section-label reveal reveal-d1">Udvalgte projekter</p>
-          <h2 id="work-heading" class="reveal reveal-d2">Seneste arbejde</h2>
+          <h2 id="work-heading" class="reveal reveal-d2">Projekter jeg stolt af</h2>
         </div>
-        <a href="/work" class="view-all reveal reveal-d3" aria-label="Se alle projekter">
-          Se alle &rarr;
-        </a>
       </div>
 
       <div class="projects-grid">
 
         <!-- Project 1 -->
-        <a href="projekt.html?slug=dsb-redesign" class="project-card reveal reveal-d2">
+        <!-- <a href="projekt.html?slug=dsb-redesign" class="project-card reveal reveal-d2">
           <div class="card-image">
             <img
-              src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=900&q=80"
-              alt="Projekt Et — web app vist på en bærbar computer"
+              src="assets/images/DSB-cover.png"
+              alt="DSB app redesign"
               width="900" height="563"
               fetchpriority="high"
             />
           </div>
-          <div class="card-body">
-            <div>
-              <p class="card-meta">Web&nbsp;App &middot; 2025</p>
-              <h3>DSB - App</h3>
-            </div>
-            <span class="card-arrow" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M2 12L12 2M12 2H6M12 2v6"/>
-              </svg>
-            </span>
+          <div class="card-copy">
+            <p class="card-meta">DSB &middot; 2025</p>
+            <h3>Rejseapp redesign med fokus på overblik</h3>
           </div>
-        </a>
+        </a> -->
 
         <!-- Project 2 -->
         <a href="projekt.html?slug=dentaaid-akutkit" class="project-card reveal reveal-d3">
           <div class="card-image">
             <img
               src="assets/images/Dentaaid-preview.png"
-              alt="DentaAid — akutkit vejledningsapp"
+              alt="DentaAid akutkit vejledningsapp"
               width="900" height="563"
               loading="lazy"
             />
           </div>
-          <div class="card-body">
-            <div>
-              <p class="card-meta">UX&nbsp;Design &middot; 2025</p>
-              <h3>DentaAid - Vejledningsapp</h3>
-            </div>
-            <span class="card-arrow" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M2 12L12 2M12 2H6M12 2v6"/>
-              </svg>
-            </span>
+          <div class="card-copy">
+            <p class="card-meta">DentaAid &middot; 2025</p>
+            <h3>Akutkit vejledning i en stresset situation • App</h3>
           </div>
         </a>
 
@@ -131,45 +139,47 @@
         <a href="projekt.html?slug=dentaaid-forebyggelse" class="project-card reveal reveal-d4">
           <div class="card-image">
             <img
-              src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&q=80"
-              alt="DentaAid Forebyggelse — webapp interface"
+              src="assets/images/Forebyggelse-cover.png"
+              alt="DentaAid Forebyggelse webapp"
               width="900" height="563"
               loading="lazy"
             />
           </div>
-          <div class="card-body">
-            <div>
-              <p class="card-meta">UX&nbsp;Design &middot; 2025</p>
-              <h3>DentaAid Forebyggelse</h3>
-            </div>
-            <span class="card-arrow" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M2 12L12 2M12 2H6M12 2v6"/>
-              </svg>
-            </span>
+          <div class="card-copy">
+            <p class="card-meta">DentaAid &middot; 2025</p>
+            <h3>Forebyggelsesforløb for risikogrupper • App</h3>
           </div>
         </a>
 
         <!-- Project 4 -->
-        <a href="projekt.html?slug=projekt-fire" class="project-card reveal reveal-d5">
+        <a href="projekt.html?slug=dentaaid-hjemmeside" class="project-card reveal reveal-d5">
           <div class="card-image">
             <img
-              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&q=80"
-              alt="Projekt Fire — design system komponenter"
+              src="assets/images/Dentaaid-hjemmeside-cover.png"
+              alt="DentaAid hjemmeside præsentation"
               width="900" height="563"
               loading="lazy"
             />
           </div>
-          <div class="card-body">
-            <div>
-              <p class="card-meta">Design&nbsp;System &middot; 2024</p>
-              <h3>Projekt Fire</h3>
-            </div>
-            <span class="card-arrow" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M2 12L12 2M12 2H6M12 2v6"/>
-              </svg>
-            </span>
+          <div class="card-copy">
+            <p class="card-meta">DentaAid &middot; 2026</p>
+            <h3>Teledentistry-platform • Hjemmeside</h3>
+          </div>
+        </a>
+
+        <!-- Project 5 -->
+        <a href="projekt.html?slug=agilio" class="project-card reveal reveal-d5">
+          <div class="card-image">
+            <img
+              src="assets/images/Agilio-Cover.png"
+              alt="Agilio hjemmeside til europæisk projektstyring"
+              width="900" height="563"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-copy">
+            <p class="card-meta">Agilio &middot; 2026</p>
+            <h3>Website til europæisk projektstyring</h3>
           </div>
         </a>
 
@@ -223,12 +233,6 @@
   </footer>
 
   <script>
-    // Nav scroll behaviour
-    const nav = document.querySelector('.nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('nav--scrolled', window.scrollY > 40);
-    }, { passive: true });
-
     // Staggered reveal via IntersectionObserver
     // Animations only run if prefers-reduced-motion: no-preference (handled in CSS)
     const reveals = document.querySelectorAll('.reveal');
@@ -244,6 +248,80 @@
       { threshold: 0.08 }
     );
     reveals.forEach(el => observer.observe(el));
+
+    // Scroll-scrubbed video
+    const scrubSection = document.querySelector('.scroll-video');
+    const scrubVideo = document.getElementById('js-scroll-video');
+
+    if (scrubSection && scrubVideo) {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let videoDuration = 0;
+      let targetProgress = 0;
+      let currentProgress = 0;
+      let scrubFrame = null;
+      let isScrubActive = false;
+      let lastCommitTs = 0;
+      const fpsCap = 30;
+      const commitInterval = 1000 / fpsCap;
+
+      const updateTargetProgress = () => {
+        const maxScroll = Math.max(1, scrubSection.offsetHeight - window.innerHeight);
+        const sectionTop = scrubSection.getBoundingClientRect().top;
+        const progressed = Math.min(maxScroll, Math.max(0, -sectionTop));
+        targetProgress = progressed / maxScroll;
+      };
+
+      const renderScrubVideo = (ts) => {
+        scrubFrame = window.requestAnimationFrame(renderScrubVideo);
+        if (prefersReducedMotion || !videoDuration || !isScrubActive) return;
+
+        currentProgress += (targetProgress - currentProgress) * 0.2;
+        if (Math.abs(targetProgress - currentProgress) < 0.00015) {
+          currentProgress = targetProgress;
+        }
+
+        if (ts - lastCommitTs < commitInterval) {
+          return;
+        }
+        lastCommitTs = ts;
+
+        // Quantize to ~30fps to avoid over-seeking jitter.
+        const targetTime = Math.round((currentProgress * videoDuration) * fpsCap) / fpsCap;
+        if (Math.abs(scrubVideo.currentTime - targetTime) > 0.02) {
+          scrubVideo.currentTime = Math.max(0, Math.min(videoDuration, targetTime));
+        }
+      };
+
+      const setupScrubVideo = () => {
+        videoDuration = scrubVideo.duration || 0;
+        scrubVideo.pause();
+        updateTargetProgress();
+        currentProgress = targetProgress;
+        if (scrubFrame === null) {
+          scrubFrame = window.requestAnimationFrame(renderScrubVideo);
+        }
+      };
+
+      if (scrubVideo.readyState >= 1) {
+        setupScrubVideo();
+      } else {
+        scrubVideo.addEventListener('loadedmetadata', setupScrubVideo, { once: true });
+      }
+
+      const activeObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            isScrubActive = entry.isIntersecting;
+          });
+        },
+        { threshold: 0.01 }
+      );
+      activeObserver.observe(scrubSection);
+
+      window.addEventListener('scroll', updateTargetProgress, { passive: true });
+      window.addEventListener('resize', updateTargetProgress, { passive: true });
+      window.addEventListener('load', updateTargetProgress);
+    }
   </script>
 
 </body>
