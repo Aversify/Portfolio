@@ -15,6 +15,7 @@ const PROJECTS = [
       role: 'Junior Designer',
       disciplines: 'UX · UI · Brugertest',
     },
+    responsibilities: 'UI-design, design QA og samarbejde med udviklingsteamet om nye brugerflows.',
     summary: {
       lead: 'DSB’s app bruges dagligt af tusindvis af rejsende til at finde og booke rejser, tjekke afgange og administrere deres billetter. Som junior designer var jeg del af det interne designteam der stod for et større redesign af appen, med særligt fokus på at gøre rejseoplevelsen mere overskuelig og tilgængelig — samt en ny check ind/ud-funktion.',
 
@@ -81,16 +82,17 @@ const PROJECTS = [
     },
     meta: {
       client: 'DentaAid',
-      period: '6M',
+      period: '6 måneder',
       role: 'Product designer',
       disciplines: 'UX · Brugerflow · Figma',
     },
+    responsibilities: 'Som product designer stod jeg for hele processen. Alt fra informationsarkitektur og UX-design til frontend-udvikling og backend-opsætning.',
     tools: [
       { name: 'Figma', logo: 'assets/images/Figma_Symbol_0.svg' },
-      { name: 'Tailwind', logo: 'assets/images/tailwindcss-logotype-white.svg' },
+      { name: 'React', logo: 'assets/images/React_Logo_0.svg' },
     ],
     summary: {
-      lead: 'DentaAid er en dansk teledentistry-platform der giver brugere adgang til tandægehjælp når de har brug for det. Som solo designer stod jeg for det komplette design af deres webapp til vejledning i brugen af DentaAids akutkit.',
+      lead: 'DentaAid bygger bro mellem fysisk tandpleje og digital rådgivning og gør det muligt at få professionel hjælp, uanset tid og sted. Et af kerneprodukterne er et fysisk akutkit, der hjælper brugerne med at håndtere akutte tandproblemer hjemmefra, indtil de kan komme til en tandlæge. Kittet er tæt koblet til DentaAids webapp, som guider brugeren trin for trin gennem den rigtige anvendelse og giver mulighed for direkte kontakt med en tandlæge via video eller chat. ',
       
     },
     challenge: {
@@ -108,7 +110,7 @@ const PROJECTS = [
     },
     branding: {
       heading: 'Branding og tone of voice',
-      text: 'Det visuelle udtryk blev designet til at virke roligt og trygt i en akut situation. Farver, ikoner og microcopy blev valgt for at reducere stress og skabe en tydelig, omsorgsfuld retning gennem forlobet.',
+      text: 'Det visuelle udtryk blev designet til at virke roligt og trygt i en akut situation. Farver, ikoner og skriftype blev valgt for at reducere stress og skabe en tydelig og omsorgsfuld retning gennem forløbet.',
       image: {
         src: 'assets/images/Akutkit-branding.png',
         alt: 'Brandingretning for DentaAid Akutkit',
@@ -128,8 +130,8 @@ const PROJECTS = [
       intro: '',
       cards: [
         { number: '89%', label: 'Til næste skridt', desc: 'Andelen af brugere der fuldfører diagnose-flowet uden at forlade processen.' },
-        { number: '30 min', label: 'Opfølgningsvindue', desc: 'Bevidst valgt tidspunkt der giver behandlingen tid til at virke før brugeren tjekker ind.' },
-        { number: '0%', label: 'Klare brugsscenarier', desc: 'Andelen af brugere som angav at de følte sig overvældet under brugertests.' },
+        { number: '30 min', label: 'Opfølgningsvindue', desc: 'Bevidst valgt tidspunkt der giver behandlingen tid til at virke før opfølgningen starter.' },
+        { number: '0%', label: 'Klare brugsscenarier', desc: 'Andelen af brugere soom følte sig overvældet under brugertests.' },
       ],
     },
     nav: {
@@ -156,6 +158,11 @@ const PROJECTS = [
       role: 'Product designer',
       disciplines: 'UX · Informationsarkitektur · Figma',
     },
+    responsibilities: 'Informationsarkitektur, UX-flow, UI-design og design af check-in-oplevelsen.',
+    tools: [
+      { name: 'Figma', logo: 'assets/images/Figma_Symbol_0.svg' },
+      { name: 'React', logo: 'assets/images/React_Logo_0.svg' },
+    ],
     summary: {
       lead: 'DentaAids forebyggelsesløb er et selvstændigt digitalt produkt målrettet mennesker med særlig risiko for dårlig mundsundhed. Som solo designer stod jeg for det komplette design af webappen, fra informationsarkitektur og brugerflows til det færdige visuelle design.',
     
@@ -221,13 +228,14 @@ const PROJECTS = [
       role: 'Product designer',
       disciplines: 'Web Design · UX · UI',
     },
+    responsibilities: 'Som product designer og udvikler stod jeg for hele processen fra informationsarkitektur og visuel retning til det færdige website bygget i Shopify.',
     tools: [
       { name: 'Figma', logo: 'assets/images/Figma_Symbol_0.svg' },
       { name: '', logo: 'assets/images/shopify_logo_darkbg.svg', logoClass: 'tool-logo--shopify' },
     ],
-    summary: {
-      lead: 'DentaAid er en dansk teledentistry-platform der giver folk adgang til professionel tandlægehjælp digitalt — uden ventetid og uden at skulle møde fysisk op på en klinik. Som solo designer og udvikler stod jeg for hele processen fra informationsarkitektur og visuel retning til det færdige website bygget i Shopify.',
-    },
+summary: {
+  lead: 'DentaAid er en dansk teledentistry-platform der giver folk adgang til professionel tandlægehjælp digitalt — uden ventetid og uden at skulle møde fysisk op på en klinik. Platformen kombinerer teknologi og tandpleje ved at tilbyde både akut rådgivning og forebyggende behandling gennem video- og chatbaserede konsultationer. Brugerne kan hurtigt komme i kontakt med en tandlæge hjemmefra — uanset om det drejer sig om smerter, usikkerhed om symptomer eller opfølgning på en eksisterende behandling.',
+},
     results: {
       intro: '',
       cards: [
@@ -277,6 +285,11 @@ const PROJECTS = [
       role: 'Product Designer',
       disciplines: 'Web Design · UX · UI',
     },
+    responsibilities: 'Koncept, informationsarkitektur, UI-design og visuel retning for B2B-hjemmesiden.',
+    tools: [
+      { name: 'Figma', logo: 'assets/images/Figma_Symbol_0.svg' },
+      { name: 'Next.js', logo: 'assets/images/Next.js_Logo_0.svg', logoClass: 'tool-logo--next' },
+    ],
     summary: {
       lead: 'Agilio er et europæisk alternativ til Jira, Linear og Asana — bygget til softwareteams der vil styre projekter og sprints uden at gå på kompromis med datasikkerhed. Som solo designer og freelancer stod jeg for det komplette design af Agilios hjemmeside.',
      
@@ -290,7 +303,7 @@ const PROJECTS = [
     solution: {
       heading: 'Løsningen',
       paragraphs: [
-        'Jeg designede en hjemmeside der oversætter Agilios tekniske og juridiske fordele til et klart og tilgængeligt budskab rettet mod softwareteams og tekniske beslutningstagere. Siden er struktureret til at guide besøgende fra problembevidsthed — hvorfor det overhovedet er et problem at data ligger på amerikanske servere — til konkret produktforståelse og konvertering. Udover det primære datasikkerhedsargument kommunikerer siden at Agilio feature-mæssigt kan stå mål med de etablerede alternativer, og at overgangen fra eksisterende værktøjer er gjort så gnidningsfri som muligt.'
+        'Jeg designede en hjemmeside der oversætter Agilios tekniske og juridiske fordele til et klart og tilgængeligt budskab rettet mod softwareteams og tekniske beslutningstagere. Siden er struktureret til at guide besøgende fra problembevidsthed til konkret produktforståelse og konvertering. Udover det primære datasikkerhedsargument kommunikerer siden at Agilio feature-mæssigt kan stå mål med de etablerede alternativer, og at overgangen fra eksisterende værktøjer er gjort så gnidningsfri som muligt.'
       ],
     },
     showDesignDecisions: false,
@@ -311,9 +324,9 @@ const PROJECTS = [
     results: {
       intro: 'Case-siden er bygget op omkring de centrale salgsargumenter, der skulle flytte Agilio fra endnu et projektstyringsværktøj til et tydeligt europæisk alternativ.',
       cards: [
-        { number: '1', label: 'Kernebudskab', desc: 'Datasuverænitet blev løftet frem som det primære salgsargument fra første sektion.' },
-        { number: '2', label: 'Barrierer adresseret', desc: 'Sikkerhed og migration blev gjort til egne fortællinger for at mindske modstand mod at skifte.' },
-        { number: '1 pris', label: 'Forenklet pricing', desc: 'Et enkelt prisniveau med to hosting-muligheder reducerer friktion i beslutningsprocessen.' },
+        { number: '<10 sekunder', label: 'Kernebudskab', desc: 'Datasuverænitet blev løftet frem som det primære salgsargument fra første sektion.' },
+        { number: 'Ingen tvivl', label: 'Barrierer adresseret', desc: 'Sikkerhed og migration adresseres før brugeren når at spørge.' },
+        { number: 'Overblik', label: 'Forenklet pricing', desc: 'Kompleks information fremvist på en måde som er nemt at forstå.' },
       ],
     },
     nav: {
