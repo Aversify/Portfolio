@@ -186,6 +186,17 @@ img { display: block; max-width: 100%; }
   transform: translateY(1px);
 }
 
+.nav-cta-icon {
+  width: 0.9em;
+  height: 0.9em;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
 /* ==================
    LAYOUT
 ================== */
