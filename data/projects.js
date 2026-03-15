@@ -38,7 +38,7 @@ const PROJECTS = [
       heading: 'Branding og visuel retning',
       text: 'Brandingarbejdet fokuserede pa et roligt og konsekvent udtryk i appen. Typografi, farver og komponenthierarki blev strammet op, sa DSB-identiteten stod tydeligt frem uden at gore flowet tungere.',
       image: {
-        src: 'assets/images/DSB-cover.jpg',
+        src: 'assets/images/Dsb-cover.jpg',
         alt: 'Brandingretning for DSB app-redesign',
       },
     },
