@@ -190,7 +190,7 @@
 
             <div class="case-intro-content">
               <article class="intro-column reveal reveal-d2" aria-labelledby="overview-heading">
-                <h2 id="overview-heading">Overview</h2>
+                <h2 id="overview-heading">Overblik</h2>
                 <p>${project.summary.lead}</p>
                 ${introOverviewExtra}
               </article>
